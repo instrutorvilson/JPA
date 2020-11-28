@@ -47,7 +47,6 @@ public class Cliente implements Serializable {
     private String email;
     @Column(name = "numerocartao")
     private String numerocartao;
-    
     @OneToMany(mappedBy = "cpfcliente")
     private Collection<Locacao> locacaoCollection;
 
@@ -129,7 +128,9 @@ public class Cliente implements Serializable {
 
     @Override
     public String toString() {
-        return "jpa.bd.app.Cliente[ cpf=" + cpf + " ]";
+        return "Cliente{" + "cpf=" + cpf + ", nome=" + nome + ", fone=" + fone + ", email=" + email + ", numerocartao=" + numerocartao + ", locacaoCollection=" + locacaoCollection + '}';
     }
+
+    
     
 }

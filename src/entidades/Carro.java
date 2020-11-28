@@ -154,7 +154,9 @@ public class Carro implements Serializable {
 
     @Override
     public String toString() {
-        return "jpa.bd.app.Carro[ id=" + id + " ]";
+        return "Carro{" + "id=" + id + ", placa=" + placa + ", marca=" + marca + ", modelo=" + modelo + ", km=" + km + ", arcondicionado=" + arcondicionado + ", direcaohidraulico=" + direcaohidraulico + ", locacaoCollection=" + locacaoCollection + '}';
     }
+
+    
     
 }
